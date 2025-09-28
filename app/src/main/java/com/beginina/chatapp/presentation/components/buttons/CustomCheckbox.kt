@@ -8,7 +8,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.tooling.preview.Preview
 import com.beginina.chatapp.ui.theme.Blue
-import com.beginina.chatapp.ui.theme.MiddleGray
+import com.beginina.chatapp.ui.theme.MiddleGrayLight
 import com.beginina.chatapp.ui.theme.White
 
 @Composable
@@ -19,7 +19,7 @@ fun CustomCheckbox(
         colors = CheckboxDefaults.colors(
             checkedColor = Blue,
             checkmarkColor = White,
-            uncheckedColor = MiddleGray
+            uncheckedColor = MiddleGrayLight
         ),
         checked = isCheckedState.value,
         onCheckedChange = {
