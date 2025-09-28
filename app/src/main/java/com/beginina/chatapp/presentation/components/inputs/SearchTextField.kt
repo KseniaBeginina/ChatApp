@@ -7,7 +7,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.beginina.chatapp.R
@@ -23,16 +22,14 @@ fun SearchTextField(
         placeholder = "",
         height = 54.dp,
         maxWidth = maxWidth,
-        maxLines = 1,
         keyboardType = KeyboardType.Text,
-        visualTransformation = VisualTransformation.None,
         leadingIcon = {
             Icon(
                 painter = painterResource(R.drawable.search),
                 contentDescription = null
             )
         },
-        onValueChange = {onValueChange(it)}
+        onValueChange = onValueChange
     )
 }
 

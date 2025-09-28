@@ -5,7 +5,6 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
@@ -20,10 +19,8 @@ fun EmailTextField(
         placeholder = "email@mail.ru",
         height = 54.dp,
         maxWidth = maxWidth,
-        maxLines = 1,
         keyboardType = KeyboardType.Email,
-        visualTransformation = VisualTransformation.None,
-        onValueChange = {onValueChange(it)}
+        onValueChange = onValueChange
     )
 }
 

@@ -19,10 +19,9 @@ fun PhoneTextField(
         placeholder = "+7(987)654-32-10",
         height = 54.dp,
         maxWidth = maxWidth,
-        maxLines = 1,
         keyboardType = KeyboardType.Phone,
         visualTransformation = PhoneNumberVisualTransformation(),
-        onValueChange = {onValueChange(it)}
+        onValueChange = onValueChange
     )
 }
 

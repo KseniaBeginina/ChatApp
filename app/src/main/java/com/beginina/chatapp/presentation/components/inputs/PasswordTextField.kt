@@ -27,29 +27,18 @@ fun PasswordTextField(
         placeholder = "",
         height = 54.dp,
         maxWidth = maxWidth,
-        maxLines = 1,
         keyboardType = KeyboardType.Password,
         visualTransformation = if (hideState.value) PasswordVisualTransformation() else VisualTransformation.None,
         trailingIcon = {
-            if (hideState.value){
-                Icon(
-                    painter = painterResource(id = R.drawable.eye_close),
-                    contentDescription = "hide",
-                    modifier = Modifier.clickable {
-                        hideState.value = !hideState.value
-                    }
-                )
-            } else {
-                Icon(
-                    painter = painterResource(id = R.drawable.eye_open),
-                    contentDescription = "hide",
-                    modifier = Modifier.clickable {
-                        hideState.value = !hideState.value
-                    }
-                )
-            }
+            Icon(
+                painter = painterResource(id = if (hideState.value) R.drawable.eye_close else R.drawable.eye_open),
+                contentDescription = "hide",
+                modifier = Modifier.clickable {
+                    hideState.value = !hideState.value
+                }
+            )
         },
-        onValueChange = {onValueChange(it)}
+        onValueChange = onValueChange
     )
 }
 

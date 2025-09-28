@@ -27,9 +27,9 @@ fun BaseTextField(
     placeholder: String,
     height: Dp,
     maxWidth: Float = 1F,
-    maxLines: Int,
+    maxLines: Int = 1,
     keyboardType: KeyboardType,
-    visualTransformation: VisualTransformation,
+    visualTransformation: VisualTransformation = VisualTransformation.None,
     leadingIcon: (@Composable () -> Unit)? = null,
     trailingIcon: (@Composable () -> Unit)? = null,
     onValueChange:(String)->Unit
@@ -67,6 +67,6 @@ fun BaseTextField(
         ),
         value = textState.value,
         maxLines = maxLines,
-        onValueChange = {onValueChange(it)}
+        onValueChange = onValueChange
     )
 }
