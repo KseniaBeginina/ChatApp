@@ -13,7 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.beginina.chatapp.ui.theme.Black
 import com.beginina.chatapp.ui.theme.LightGray
-import com.beginina.chatapp.ui.theme.MiddleGray
+import com.beginina.chatapp.ui.theme.MiddleGrayLight
 import com.beginina.chatapp.ui.theme.button
 
 @Composable
@@ -29,7 +29,7 @@ fun UnfilledButton(
         modifier = Modifier
             .height(40.dp)
             .fillMaxWidth(),
-        border = BorderStroke(1.dp, MiddleGray),
+        border = BorderStroke(1.dp, MiddleGrayLight),
         shape = RoundedCornerShape(4.dp),
         onClick = { onClick() }
     ){

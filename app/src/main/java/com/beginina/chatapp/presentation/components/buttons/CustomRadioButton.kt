@@ -8,7 +8,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.tooling.preview.Preview
 import com.beginina.chatapp.ui.theme.Blue
-import com.beginina.chatapp.ui.theme.MiddleGray
+import com.beginina.chatapp.ui.theme.MiddleGrayLight
 
 @Composable
 fun CustomRadioButton(
@@ -21,7 +21,7 @@ fun CustomRadioButton(
         },
         colors = RadioButtonDefaults.colors(
             selectedColor = Blue,
-            unselectedColor = MiddleGray
+            unselectedColor = MiddleGrayLight
         )
     )
 }
