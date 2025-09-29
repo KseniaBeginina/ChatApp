@@ -24,6 +24,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.beginina.chatapp.R
 import com.beginina.chatapp.presentation.pages.ChatsPage
+import com.beginina.chatapp.presentation.pages.authentication.OnboardingPage
 import com.beginina.chatapp.ui.theme.Black
 import com.beginina.chatapp.ui.theme.MiddleGray
 import com.beginina.chatapp.ui.theme.MiddleGrayLight
@@ -90,6 +91,12 @@ fun NavGraph(startDestination: String){
             startDestination = startDestination,
             modifier = Modifier.padding(it)
         ){
+            composable(Routes.ONBOARDING){
+                OnboardingPage(
+                    navController = navController
+                )
+                bottomBarState.value = false
+            }
             composable(Routes.CHATS){
                 ChatsPage()
             }

@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ChatAppTheme {
-                val startDestination = Routes.CHATS
+                val startDestination = Routes.ONBOARDING
                 NavGraph(startDestination = startDestination)
             }
         }
