@@ -45,3 +45,8 @@ val bottomBar = TextStyle(
     fontSize = 12.sp,
     lineHeight = 24.sp
 )
+val logo = TextStyle(
+    fontFamily = FontFamily(Font(R.font.montserrat_bold)),
+    fontSize = 36.sp,
+    lineHeight = 24.sp
+)
