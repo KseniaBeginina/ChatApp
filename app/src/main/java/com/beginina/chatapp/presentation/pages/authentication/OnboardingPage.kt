@@ -16,6 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.beginina.chatapp.R
@@ -59,12 +60,12 @@ fun OnboardingPage(
 
                 Column {
                     Text(
-                        text = "Talkee",
+                        text = stringResource(R.string.app_name),
                         style = logo,
                         color = Black
                     )
                     Text(
-                        text = "Все что нужно для связи",
+                        text = stringResource(R.string.slogan),
                         style = bottomBar,
                         color = Black
                     )
@@ -84,19 +85,19 @@ fun OnboardingPage(
                 horizontalAlignment = Alignment.CenterHorizontally
             ){
                 Text(
-                    text = "Добро пожаловать в Talkee",
+                    text = stringResource(R.string.welcome),
                     style = h1,
                     color = Black
                 )
                 Text(
-                    text = "Говори свободно, где бы ты ни был",
+                    text = stringResource(R.string.welcome_slogan),
                     style = b1,
                     color = Black
                 )
             }
 
             FilledButton(
-                text = "Начать общение"
+                text = stringResource(R.string.welcome_button)
             ) {
                 navController.navigate(Routes.LOGIN){
                     popUpTo(Routes.ONBOARDING){

@@ -16,6 +16,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.NavHost
@@ -37,9 +38,9 @@ fun NavGraph(startDestination: String){
     val bottomBarState = remember { mutableStateOf(true) }
 
     val bottomBarItems = listOf(
-        BottomBarItem(route = Routes.CHATS, icon = painterResource(R.drawable.message), title = "Сообщения"),
-        BottomBarItem(route = Routes.CONTACTS, icon = painterResource(R.drawable.users), title = "Контакты"),
-        BottomBarItem(route = Routes.PROFILE, icon = painterResource(R.drawable.user_circle), title = "Профиль")
+        BottomBarItem(route = Routes.CHATS, icon = painterResource(R.drawable.message), title = stringResource(R.string.bbi_messages)),
+        BottomBarItem(route = Routes.CONTACTS, icon = painterResource(R.drawable.users), title = stringResource(R.string.bbi_contacts)),
+        BottomBarItem(route = Routes.PROFILE, icon = painterResource(R.drawable.user_circle), title = stringResource(R.string.bbi_profile))
     )
 
     Scaffold (

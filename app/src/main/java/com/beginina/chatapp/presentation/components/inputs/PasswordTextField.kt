@@ -8,6 +8,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
@@ -24,7 +25,7 @@ fun PasswordTextField(
     val hideState = remember { mutableStateOf(true) }
     BaseTextField(
         textState = passwordState,
-        placeholder = "",
+        placeholder = stringResource(R.string.tf_password),
         height = 54.dp,
         maxWidth = maxWidth,
         keyboardType = KeyboardType.Password,
@@ -45,7 +46,7 @@ fun PasswordTextField(
 @Composable
 @Preview(showBackground = true)
 fun CheckPasswordTextField(){
-    var checkedState = remember { mutableStateOf("123") }
+    var checkedState = remember { mutableStateOf("") }
     PasswordTextField(
         checkedState
     ) { }
