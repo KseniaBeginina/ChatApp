@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">Welcome to Talkee</string>
+    <string name="slogan">All you need to stay in touch</string>
+    <string name="welcome_slogan">Speak freely wherever you are</string>
+    <string name="welcome_button">Let’s Talkee</string>
+    <string name="tf_email">Input your email</string>
+    <string name="tf_password">Password</string>
+    <string name="tf_search">Search</string>
+    <string name="bbi_messages">Messages</string>
+    <string name="bbi_contacts">Contacts</string>
+    <string name="bbi_profile">Profile</string>
+</resources>

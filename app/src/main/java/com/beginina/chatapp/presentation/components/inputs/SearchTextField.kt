@@ -6,6 +6,7 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -19,7 +20,7 @@ fun SearchTextField(
 ){
     BaseTextField(
         textState = searchState,
-        placeholder = "",
+        placeholder = stringResource(R.string.tf_search),
         height = 54.dp,
         maxWidth = maxWidth,
         keyboardType = KeyboardType.Text,
