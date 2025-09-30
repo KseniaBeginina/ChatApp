@@ -9,7 +9,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.layout.wrapContentSize
-import androidx.compose.material.Text
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -18,13 +18,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
-import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.LinkAnnotation
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.withLink
 import androidx.compose.ui.text.withStyle
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.beginina.chatapp.navigation.Routes
@@ -35,11 +33,9 @@ import com.beginina.chatapp.ui.theme.Black
 import com.beginina.chatapp.ui.theme.Blue
 import com.beginina.chatapp.ui.theme.White
 import com.beginina.chatapp.ui.theme.bold24
+import com.beginina.chatapp.ui.theme.medium14
 import com.beginina.chatapp.ui.theme.semibold12
 import com.beginina.chatapp.ui.theme.semibold16
-import com.beginina.chatapp.ui.theme.semibold24
-import com.beginina.chatapp.ui.theme.medium14
-import com.beginina.chatapp.ui.theme.regular12
 
 @Composable
 fun LoginPage(
