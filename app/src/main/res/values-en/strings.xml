@@ -10,4 +10,11 @@
     <string name="bbi_messages">Messages</string>
     <string name="bbi_contacts">Contacts</string>
     <string name="bbi_profile">Profile</string>
+    <string name="auth_welcome">Welcome back!</string>
+    <string name="auth_slogan">We’re excited to see you again!</string>
+    <string name="account_info">Account Information</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="auth_button">Log In</string>
+    <string name="auth_no_acc">"Don’t have an account? "</string>
+    <string name="reg_button">Sign up</string>
 </resources>

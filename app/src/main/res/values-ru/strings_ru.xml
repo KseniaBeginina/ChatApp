@@ -10,4 +10,11 @@
     <string name="bbi_messages">Сообщения</string>
     <string name="bbi_contacts">Контакты</string>
     <string name="bbi_profile">Профиль</string>
+    <string name="auth_welcome">Добро пожаловать!</string>
+    <string name="auth_slogan">Мы рады видеть вас снова!</string>
+    <string name="account_info">Данные аккаунта</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="auth_button">Войти</string>
+    <string name="auth_no_acc">"Впервые здесь? "</string>
+    <string name="reg_button">Создать аккаунт</string>
 </resources>

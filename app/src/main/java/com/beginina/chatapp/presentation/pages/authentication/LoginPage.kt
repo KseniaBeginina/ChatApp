@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.LinkAnnotation
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
@@ -25,6 +26,7 @@ import androidx.compose.ui.text.withLink
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.beginina.chatapp.R
 import com.beginina.chatapp.navigation.Routes
 import com.beginina.chatapp.presentation.components.buttons.FilledButton
 import com.beginina.chatapp.presentation.components.inputs.EmailTextField
@@ -68,12 +70,12 @@ fun LoginPage(
             horizontalAlignment = Alignment.CenterHorizontally
         ){
             Text(
-                text = "Добро пожаловать!",
+                text = stringResource(R.string.auth_welcome),
                 style = bold24,
                 color = Black
             )
             Text(
-                text = "Мы рады видеть вас снова!",
+                text = stringResource(R.string.auth_slogan),
                 style = medium14,
                 color = Black
             )
@@ -86,7 +88,7 @@ fun LoginPage(
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ){
             Text(
-                text = "Данные аккаунта",
+                text = stringResource(R.string.account_info),
                 style = semibold16,
                 color = Black
             )
@@ -101,7 +103,7 @@ fun LoginPage(
                 passwordState.value = it
             }
             Text(
-                text = "Забыли пароль?",
+                text = stringResource(R.string.forgot_password),
                 style = semibold12,
                 color = Blue
             )
@@ -112,13 +114,13 @@ fun LoginPage(
             horizontalAlignment = Alignment.CenterHorizontally
         ){
             FilledButton(
-                text = "Войти"
+                text = stringResource(R.string.auth_button)
             ) {
                 //TODO LOGIN
             }
 
             val annotatedString = buildAnnotatedString {
-                append("Нет аккаунта? ")
+                append(stringResource(R.string.auth_no_acc)+" ")
                 withStyle (style = SpanStyle(color = Blue)){
                     withLink (
                         link = LinkAnnotation.Clickable(
@@ -129,7 +131,7 @@ fun LoginPage(
                             }
                         )
                     ){
-                        append("Зарегистрируйтесь")
+                        append(stringResource(R.string.reg_button))
                     }
                 }
             }
