@@ -25,12 +25,13 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.beginina.chatapp.R
 import com.beginina.chatapp.presentation.pages.ChatsPage
+import com.beginina.chatapp.presentation.pages.authentication.LoginPage
 import com.beginina.chatapp.presentation.pages.authentication.OnboardingPage
 import com.beginina.chatapp.ui.theme.Black
 import com.beginina.chatapp.ui.theme.MiddleGray
 import com.beginina.chatapp.ui.theme.MiddleGrayLight
 import com.beginina.chatapp.ui.theme.White
-import com.beginina.chatapp.ui.theme.bottomBar
+import com.beginina.chatapp.ui.theme.semibold12
 
 @Composable
 fun NavGraph(startDestination: String){
@@ -69,7 +70,7 @@ fun NavGraph(startDestination: String){
                             label = {
                                 Text(
                                     text = item.title,
-                                    style = bottomBar,
+                                    style = semibold12,
                                     color = if (currentRoute == item.route) Black else MiddleGray
                                 )
                             },
@@ -98,8 +99,15 @@ fun NavGraph(startDestination: String){
                 )
                 bottomBarState.value = false
             }
+            composable(Routes.LOGIN){
+                LoginPage(
+                    navController = navController
+                )
+                bottomBarState.value = false
+            }
             composable(Routes.CHATS){
                 ChatsPage()
+                bottomBarState.value = true
             }
         }
     }

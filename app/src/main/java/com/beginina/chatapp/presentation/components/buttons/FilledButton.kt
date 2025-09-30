@@ -13,7 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.beginina.chatapp.ui.theme.Blue
 import com.beginina.chatapp.ui.theme.White
-import com.beginina.chatapp.ui.theme.button
+import com.beginina.chatapp.ui.theme.semibold16
 
 @Composable
 fun FilledButton(
@@ -34,7 +34,7 @@ fun FilledButton(
     ){
         Text(
             text = text,
-            style = button
+            style = semibold16
         )
     }
 }

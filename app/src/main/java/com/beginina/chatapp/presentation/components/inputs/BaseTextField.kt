@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import com.beginina.chatapp.ui.theme.Black
 import com.beginina.chatapp.ui.theme.MiddleGrayLight
 import com.beginina.chatapp.ui.theme.White
-import com.beginina.chatapp.ui.theme.subtitle
+import com.beginina.chatapp.ui.theme.medium14
 
 @Composable
 fun BaseTextField(
@@ -52,7 +52,7 @@ fun BaseTextField(
         visualTransformation = visualTransformation,
         trailingIcon = trailingIcon,
         leadingIcon = leadingIcon,
-        textStyle = subtitle,
+        textStyle = medium14,
         colors = TextFieldDefaults.colors(
             unfocusedContainerColor = White,
             unfocusedTextColor = MiddleGrayLight,

@@ -14,7 +14,7 @@ import androidx.compose.ui.unit.dp
 import com.beginina.chatapp.ui.theme.Black
 import com.beginina.chatapp.ui.theme.LightGray
 import com.beginina.chatapp.ui.theme.MiddleGrayLight
-import com.beginina.chatapp.ui.theme.button
+import com.beginina.chatapp.ui.theme.semibold16
 
 @Composable
 fun UnfilledButton(
@@ -35,7 +35,7 @@ fun UnfilledButton(
     ){
         Text(
             text = text,
-            style = button
+            style = semibold16
         )
     }
 }

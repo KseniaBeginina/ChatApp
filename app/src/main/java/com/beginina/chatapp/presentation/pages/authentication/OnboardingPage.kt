@@ -24,10 +24,10 @@ import com.beginina.chatapp.navigation.Routes
 import com.beginina.chatapp.presentation.components.buttons.FilledButton
 import com.beginina.chatapp.ui.theme.Black
 import com.beginina.chatapp.ui.theme.White
-import com.beginina.chatapp.ui.theme.b1
-import com.beginina.chatapp.ui.theme.bottomBar
-import com.beginina.chatapp.ui.theme.h1
-import com.beginina.chatapp.ui.theme.logo
+import com.beginina.chatapp.ui.theme.bold36
+import com.beginina.chatapp.ui.theme.regular16
+import com.beginina.chatapp.ui.theme.semibold12
+import com.beginina.chatapp.ui.theme.semibold24
 
 @Composable
 fun OnboardingPage(
@@ -61,12 +61,12 @@ fun OnboardingPage(
                 Column {
                     Text(
                         text = stringResource(R.string.app_name),
-                        style = logo,
+                        style = bold36,
                         color = Black
                     )
                     Text(
                         text = stringResource(R.string.slogan),
-                        style = bottomBar,
+                        style = semibold12,
                         color = Black
                     )
                 }
@@ -86,12 +86,12 @@ fun OnboardingPage(
             ){
                 Text(
                     text = stringResource(R.string.welcome),
-                    style = h1,
+                    style = semibold24,
                     color = Black
                 )
                 Text(
                     text = stringResource(R.string.welcome_slogan),
-                    style = b1,
+                    style = regular16,
                     color = Black
                 )
             }

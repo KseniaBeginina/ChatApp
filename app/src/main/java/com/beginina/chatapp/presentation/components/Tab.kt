@@ -18,7 +18,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.beginina.chatapp.ui.theme.Blue
 import com.beginina.chatapp.ui.theme.Gray
-import com.beginina.chatapp.ui.theme.subtitle
+import com.beginina.chatapp.ui.theme.medium14
 
 @Composable
 fun Tab(
@@ -35,7 +35,7 @@ fun Tab(
     ){
         Text(
             text = text,
-            style = subtitle,
+            style = medium14,
             color = if (isSelectedState.value) Blue else Gray
         )
 
