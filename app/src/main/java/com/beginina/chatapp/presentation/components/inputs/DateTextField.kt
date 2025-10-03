@@ -9,27 +9,27 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun SimpleTextField(
-    textState: MutableState<String>,
+fun DateTextField(
+    dateState: MutableState<String>,
     maxWidth: Float = 1F,
-    placeholder: String = "",
     onValueChange:(String)->Unit
 ){
     BaseTextField(
-        textState = textState,
-        placeholder = placeholder,
+        textState = dateState,
+        placeholder = "01.01.1991",
         height = 54.dp,
         maxWidth = maxWidth,
-        keyboardType = KeyboardType.Text,
+        keyboardType = KeyboardType.Number,
+        visualTransformation = DateVisualTransformation(),
         onValueChange = onValueChange
     )
 }
 
 @Composable
 @Preview(showBackground = true)
-fun CheckSimpleTextField(){
-    var checkedState = remember { mutableStateOf("") }
-    SimpleTextField(
+fun CheckDateTextField(){
+    var checkedState = remember { mutableStateOf("01011991") }
+    DateTextField(
         checkedState
     ) { }
 }

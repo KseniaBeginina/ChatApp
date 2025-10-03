@@ -17,4 +17,19 @@
     <string name="auth_button">Log In</string>
     <string name="auth_no_acc">"Don’t have an account? "</string>
     <string name="reg_button">Sign up</string>
+    <string name="reg_get_acc">Already have an account?</string>
+    <string name="reg_step_1">1 of 2</string>
+    <string name="reg_step_2">2 of 2</string>
+    <string name="reg_step_1_text">Fill profile information</string>
+    <string name="profile_info_email">Your email</string>
+    <string name="profile_info_photo">Photo profile</string>
+    <string name="profile_info_name">Name and surname</string>
+    <string name="tf_name">Your name and surname</string>
+    <string name="profile_info_birthday">Your birthday</string>
+    <string name="profile_info_phone">Phone number</string>
+    <string name="next_button">Next</string>
+    <string name="reg_step_2_text">Set Your Password</string>
+    <string name="profile_info_new_pass">New password</string>
+    <string name="profile_info_confirm_pass">Confirm password</string>
+    <string name="back_button">Back</string>
 </resources>

@@ -17,4 +17,19 @@
     <string name="auth_button">Войти</string>
     <string name="auth_no_acc">"Впервые здесь? "</string>
     <string name="reg_button">Создать аккаунт</string>
+    <string name="reg_get_acc">Уже есть аккаунт?</string>
+    <string name="reg_step_1">1 из 2</string>
+    <string name="reg_step_2">2 из 2</string>
+    <string name="reg_step_1_text">Заполните информацию профиля</string>
+    <string name="profile_info_email">Ваш email</string>
+    <string name="profile_info_photo">Фотография профиля</string>
+    <string name="profile_info_name">Имя и фамилия</string>
+    <string name="tf_name">Введите имя и фамилию</string>
+    <string name="profile_info_birthday">Дата рождения</string>
+    <string name="profile_info_phone">Номер телефона</string>
+    <string name="next_button">Дальше</string>
+    <string name="reg_step_2_text">Придумайте пароль</string>
+    <string name="profile_info_new_pass">Новый пароль</string>
+    <string name="profile_info_confirm_pass">Подтвердите пароль</string>
+    <string name="back_button">Назад</string>
 </resources>

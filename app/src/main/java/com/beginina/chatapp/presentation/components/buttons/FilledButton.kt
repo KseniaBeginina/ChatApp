@@ -18,13 +18,14 @@ import com.beginina.chatapp.ui.theme.semibold16
 @Composable
 fun FilledButton(
     text: String,
-    color: Color = Blue,
+    backgroundColor: Color = Blue,
+    textColor: Color = White,
     onClick: () -> Unit
 ){
     Button(
         colors = ButtonDefaults.buttonColors(
-            containerColor = color,
-            contentColor = White
+            containerColor = backgroundColor,
+            contentColor = textColor
         ),
         modifier = Modifier
             .height(40.dp)

@@ -126,8 +126,7 @@ fun LoginPage(
                         link = LinkAnnotation.Clickable(
                             tag = "registration",
                             linkInteractionListener = {
-                                navController.navigate(Routes.CHATS)
-                                //TODO to registration
+                                navController.navigate(Routes.REGISTRATION)
                             }
                         )
                     ){

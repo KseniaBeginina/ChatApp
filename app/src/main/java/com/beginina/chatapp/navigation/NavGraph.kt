@@ -27,6 +27,7 @@ import com.beginina.chatapp.R
 import com.beginina.chatapp.presentation.pages.ChatsPage
 import com.beginina.chatapp.presentation.pages.authentication.LoginPage
 import com.beginina.chatapp.presentation.pages.authentication.OnboardingPage
+import com.beginina.chatapp.presentation.pages.authentication.RegistrationPage
 import com.beginina.chatapp.ui.theme.Black
 import com.beginina.chatapp.ui.theme.MiddleGray
 import com.beginina.chatapp.ui.theme.MiddleGrayLight
@@ -101,6 +102,12 @@ fun NavGraph(startDestination: String){
             }
             composable(Routes.LOGIN){
                 LoginPage(
+                    navController = navController
+                )
+                bottomBarState.value = false
+            }
+            composable(Routes.REGISTRATION){
+                RegistrationPage(
                     navController = navController
                 )
                 bottomBarState.value = false
